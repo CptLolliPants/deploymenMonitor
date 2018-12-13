@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 app.post('/api', (req, res) => {
   var body = req.body
   console.log(req.body)
-  res.send(req.body.data)
+  //res.send(req.body.data)
 })
 
 app.listen(port, () => console.log('Example app listening on port: ' + port))
