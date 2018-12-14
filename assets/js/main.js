@@ -3,7 +3,7 @@ function MyFunction(){
     let myInput = document.getElementById("myInput")
     let myOutput = document.getElementById("myOutput")
     xhttp.open(
-        "POST",
+        "GET",
         "api"
     )
     xhttp.setRequestHeader(
