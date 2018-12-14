@@ -2,6 +2,9 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const port = process.env.PORT || 3000
+const secrets = require('./secrets.json')
+
+console.log(secrets)
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname, 'assets')))
