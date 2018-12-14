@@ -12,8 +12,7 @@ function MyFunction(){
     )
     xhttp.onreadystatechange = function(){
         if(this.readyState == XMLHttpRequest.DONE && this.status === 200){
-            console.log(this.response)
-            myOutput.innerHTML = this.response
+            this.response.forEach((el) => myOutput.innerHTML += el.id)
         }
     }
     xhttp.send(JSON.stringify({"data":myInput.value}))
