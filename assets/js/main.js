@@ -13,3 +13,4 @@ xhttp.onreadystatechange = function(){
         JSON.parse(this.response).forEach((el) => myOutput.innerHTML += '<br>' + el.id)
     }
 }
+xhttp.send()
