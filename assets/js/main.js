@@ -1,4 +1,4 @@
-$(() => {
+() => {
     let xhttp = new XMLHttpRequest()
     let myInput = document.getElementById("myInput")
     let myOutput = document.getElementById("myOutput")
@@ -16,4 +16,4 @@ $(() => {
         }
     }
     xhttp.send(JSON.stringify({"data":myInput.value}))
-})
+}()
