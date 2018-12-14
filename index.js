@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const port = process.env.PORT || 3000
-const secrets = require('./secrets.json')
+const credentials = require('./secrets.json')
 const vro = require('./lib/vroConnector.js')
 const url = 'https://p-issc-000015.luci.leidenuniv.nl:8281/vco/api/categories/2c912018667d522501671c3996135815'
 
@@ -21,7 +21,7 @@ app.post('/api', (req, res) => {
 })
 app.get('/api', (req, res) => {
   vro.getMultiMachineDeployments(
-    vro,
+    url,
     credentials,
     (result) => res.send(result)
   )
