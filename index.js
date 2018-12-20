@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
 app.post('/api', (req, res) => {
   var body = req.body
   console.log(req.body)
-  console.log("I hear people....")
-  res.send("I love hooomans" + req.body.data)
+  //console.log("I hear people....")
+  res.send(200)
 })
 app.get('/api', (req, res) => {
   vro.getMultiMachineDeployments(
